@@ -1,0 +1,132 @@
+.footer {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  border-top: 1px solid #266964;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Section Heading */
+.footer-heading {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background: none;
+  border: none;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.footer-icon {
+  font-size: 1rem;
+}
+
+/* Links list */
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.footer-links.open {
+  display: block;
+}
+
+.footer-links li {
+  margin: 0.4rem 0;
+  color: #333;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.footer-links li:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter */
+.footer-newsletter {
+  margin-top: 1rem;
+}
+
+.footer-newsletter h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-newsletter p {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  flex: 1 1 200px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.newsletter-form button {
+  background-color: #266964;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: white;
+  color: #266964;
+}
+
+/* -------- Responsive Styles -------- */
+
+/* Tablets */
+@media (min-width: 768px) {
+  .footer-wrapper {
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 1rem;
+  }
+
+  .footer-section,
+  .footer-newsletter {
+    flex: 1 1 220px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  .footer-heading {
+    cursor: default;
+    justify-content: flex-start;
+  }
+
+  .footer-icon {
+    display: none;
+  }
+
+  .footer-links {
+    display: block !important;
+    margin-top: 0.5rem;
+  }
+}

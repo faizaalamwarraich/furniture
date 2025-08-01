@@ -1,0 +1,150 @@
+.reviews-section {
+  background: #fafafa;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.trust-box {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+  border-bottom: #266964 1px solid;
+  border-top: #266964 1px solid;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.trust-item svg {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #266964;
+}
+
+.customer-reviews {
+  position: relative;
+}
+
+.reviews-heading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-track-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review-card {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.stars {
+  color: #f4c150;
+  margin-bottom: 0.5rem;
+}
+
+.review-text {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.reviewer-name {
+  font-weight: bold;
+  color: #000;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #eee;
+}
+
+.nav-button:first-of-type {
+  left: 0.5rem;
+}
+
+.nav-button:last-of-type {
+  right: 0.5rem;
+}
+
+/* Tablet (2 cards per view) */
+@media (min-width: 768px) {
+  .review-card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Desktop (3 cards per view) */
+@media (min-width: 1024px) {
+  .review-card {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+/* Base nav button style (desktop/tablet) */
+.nav-button {
+  font-size: 1.8rem;
+  background: none;
+  padding: 0.4rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #eee;
+}
+
+/* Smaller nav button for phones */
+@media (max-width: 767px) {
+  .nav-button {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    margin: 0 0.5rem;
+  }
+}

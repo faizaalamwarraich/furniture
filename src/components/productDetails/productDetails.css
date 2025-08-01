@@ -1,0 +1,145 @@
+/* === Product Details Layout === */
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  align-items:center;
+}
+
+/* === Image on the left, smaller size === */
+.product-image-wrapper {
+  flex: 0 0 400px; /* fixed width */
+}
+
+.product-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* === Details on the right === */
+.product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product-info h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #266964;
+}
+
+.category {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.desc {
+  font-size: 1rem;
+  color: #444;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-control button {
+  padding: 6px 12px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-control input {
+  width: 50px;
+  text-align: center;
+}
+
+.add-to-cart {
+  background-color: #266964;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: fit-content;
+}
+
+/* === Tabs === */
+.product-tabs {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.tab-headers {
+  display: flex;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 1rem;
+}
+
+.tab-headers button {
+  background: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #444;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tab-headers button.active {
+  color: #266964;
+  border-bottom: 3px solid #266964;
+}
+
+.tab-content {
+  background: #fafafa;
+  padding: 1.2rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.tab-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tab-content li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .product-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image-wrapper {
+    flex: none;
+  }
+
+  .product-image {
+    max-width: 100%;
+  }
+
+  .product-info {
+    width: 100%;
+  }
+}
